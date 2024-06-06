@@ -1,0 +1,19 @@
+{
+  "name": "my-website",
+  "version": "0.0.1",
+  "description": "my personal website",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "serve": "live-server --verbose",
+    "start": "conc \"npm:tailwind\" \"npm:serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marion Kristoffer Lao",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^3.4.4"
+  }
+}
