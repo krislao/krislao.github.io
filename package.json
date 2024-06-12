@@ -4,9 +4,9 @@
   "description": "my personal website",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "tailwind": "tailwindcss -i ./input.css -o ./output.css",
     "serve": "live-server --verbose",
-    "start": "conc \"npm:tailwind\" \"npm:serve\"",
+    "start": "conc \"npm:tailwind -- --watch\" \"npm:serve\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marion Kristoffer Lao",
