@@ -129,150 +129,372 @@
 
     <main class="py-3 px-4 flex flex-col gap-4">
       <!-- Start: Home -->
-      <section id="home">
-        <div class="bg-white shadow-2xl max-w-lg rounded-lg mx-auto">
-          <div class="rounded-t-lg h-40 xs:h-48 overflow-hidden">
+      <section
+        id="home"
+        class="bg-white shadow-2xl max-w-lg rounded-lg mx-auto"
+      >
+        <div class="rounded-t-lg h-40 xs:h-48 overflow-hidden">
+          <img
+            class="object-cover object-top w-full"
+            src="./assets/hero.jpg"
+            alt="a picture of a developer's workstation"
+          />
+        </div>
+        <div class="px-6 pb-6 flex flex-col gap-2 border-t-2">
+          <div
+            class="w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden lg:w-36 lg:h-36"
+          >
             <img
-              class="object-cover object-top w-full"
-              src="./assets/hero.jpg"
-              alt="a picture of a developer's workstation"
+              class="object-cover object-center h-32 lg:h-36"
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+              alt="Woman looking front"
             />
           </div>
-          <div class="px-6 pb-6 flex flex-col gap-2 border-t-2">
-            <div
-              class="w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden lg:w-36 lg:h-36"
-            >
-              <img
-                class="object-cover object-center h-32 lg:h-36"
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-                alt="Woman looking front"
-              />
-            </div>
-            <div class="text-left flex flex-col flex-wrap gap-2">
-              <div class="flex flex-wrap gap-2">
-                <h1 class="font-semibold text-2xl grow shrink-0">
-                  Marion Kristoffer Lao
-                  <span class="text-gray-500 text-base block font-normal"
-                    >Software Engineer</span
-                  >
-                </h1>
-                <ul class="flex items-center gap-2">
-                  <li>
-                    <a href="https://www.linkedin.com/in/krislao">
-                      <img src="./assets/linkedin.svg" alt="Linkedin icon" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./assets//github.svg" alt="GitHub icon" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <p class="text-gray-500 text-sm">
-                Cebu, Central Visayas, Philippines
-              </p>
-            </div>
-          </div>
-          <div class="px-6 pb-6 flex justify-center">
-            <a
-              role="button"
-              href="./assets/cv.pdf"
-              download="CV_LaoMarionKristoffer"
-              class="rounded-full bg-emerald-500 hover:shadow-lg active:bg-emerald-600 font-semibold text-white px-4 py-3 flex items-center text-sm gap-1 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-emerald-500 duration-200"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="size-5"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12 2.25a.75.75 0 0 1 .75.75v11.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.22 3.22V3a.75.75 0 0 1 .75-.75Zm-9 13.5a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Download CV
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- End: Home -->
-      <!-- Start: About -->
-      <section id="about">
-        <div class="bg-white shadow-2xl max-w-xl rounded-lg mx-auto">
-          <div class="px-6 py-6 flex flex-col gap-2 border-t-2">
-            <h2 class="font-semibold text-xl">About</h2>
-            <p class="text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-              congue erat non urna tristique, vitae vehicula nisl feugiat.
-              Praesent condimentum sapien at est tempor, nec porta elit
-              tristique. Nulla facilisi. Morbi quis elit ligula. Duis vulputate
-              facilisis leo ac pellentesque. Vivamus non tellus et eros bibendum
-              feugiat.
-            </p>
-            <section class="p-3 flex flex-col gap-2 border-2 rounded-lg mt-2">
-              <h3 class="font-semibold text-base">Skills</h3>
-              <ul class="grid grid-cols-3 xs:grid-cols-4 md:grid-cols-5 gap-2">
-                <li class="flex flex-col items-center">
-                  <img src="./assets/javascript.svg" alt="JavaScript icon" />
-                  <span class="text-xs text-gray-500">JavaScript</span>
+          <div class="text-left flex flex-col flex-wrap gap-2">
+            <div class="flex flex-wrap gap-2">
+              <h1 class="font-semibold text-2xl grow shrink-0 text-black">
+                Marion Kristoffer Lao
+                <span class="text-gray-600 text-base block font-normal"
+                  >Software Engineer</span
+                >
+              </h1>
+              <ul class="flex items-center gap-2">
+                <li>
+                  <a href="https://www.linkedin.com/in/krislao">
+                    <img src="./assets/linkedin.svg" alt="Linkedin icon" />
+                  </a>
                 </li>
-                <li class="flex flex-col items-center">
-                  <img src="./assets/typescript.svg" alt="TypeScript icon" />
-                  <span class="text-xs text-gray-500">TypeScript</span>
-                </li>
-                <li class="flex flex-col items-center">
-                  <img src="./assets/react.svg" alt="React icon" />
-                  <span class="text-xs text-gray-500">React</span>
-                </li>
-                <li class="flex flex-col items-center">
-                  <img src="./assets/node.svg" alt="Node icon" />
-                  <span class="text-xs text-gray-500">Node.js</span>
-                </li>
-                <li class="flex flex-col items-center">
-                  <img src="./assets/express.svg" alt="Express icon" />
-                  <span class="text-xs text-gray-500">Express.js</span>
-                </li>
-                <li class="flex flex-col items-center">
-                  <img src="./assets/tailwindcss.svg" alt="Tailwindcss icon" />
-                  <span class="text-xs text-gray-500">Tailwindcss</span>
-                </li>
-                <li class="flex flex-col items-center">
-                  <img src="./assets/git.svg" alt="Git icon" />
-                  <span class="text-xs text-gray-500">Git</span>
+                <li>
+                  <a href="#">
+                    <img src="./assets//github.svg" alt="GitHub icon" />
+                  </a>
                 </li>
               </ul>
-            </section>
+            </div>
+            <p class="text-gray-500 text-sm">
+              Cebu, Central Visayas, Philippines
+            </p>
           </div>
-          <div class="px-6 pb-6 flex justify-center">
-            <button
-              class="rounded-full bg-emerald-500 hover:shadow-lg font-semibold text-white px-4 py-3 flex items-center text-sm gap-1 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-emerald-500 duration-200"
+        </div>
+        <div class="px-6 pb-6 flex justify-center">
+          <a
+            role="button"
+            href="./assets/cv.pdf"
+            download="CV_LaoMarionKristoffer"
+            class="rounded-full bg-emerald-500 hover:shadow-lg active:bg-emerald-600 font-semibold text-white px-4 py-3 flex items-center text-sm gap-1 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-emerald-500 duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-5"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-                />
-              </svg>
-              Let's Connect!
-            </button>
+              <path
+                fill-rule="evenodd"
+                d="M12 2.25a.75.75 0 0 1 .75.75v11.69l3.22-3.22a.75.75 0 1 1 1.06 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-4.5-4.5a.75.75 0 1 1 1.06-1.06l3.22 3.22V3a.75.75 0 0 1 .75-.75Zm-9 13.5a.75.75 0 0 1 .75.75v2.25a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V16.5a.75.75 0 0 1 1.5 0v2.25a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V16.5a.75.75 0 0 1 .75-.75Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Download CV
+          </a>
+        </div>
+      </section>
+
+      <!-- Start: About -->
+      <section
+        id="about"
+        class="bg-white shadow-2xl max-w-xl rounded-lg mx-auto"
+      >
+        <div class="px-6 py-6 flex flex-col gap-2 border-t-2">
+          <h2 class="font-semibold text-xl text-black">About</h2>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            congue erat non urna tristique, vitae vehicula nisl feugiat.
+            Praesent condimentum sapien at est tempor, nec porta elit tristique.
+            Nulla facilisi. Morbi quis elit ligula. Duis vulputate facilisis leo
+            ac pellentesque. Vivamus non tellus et eros bibendum feugiat.
+          </p>
+          <section class="p-3 flex flex-col gap-2 border-2 rounded-lg mt-2">
+            <h3 class="font-semibold text-base text-black">Skills</h3>
+            <ul class="grid grid-cols-3 xs:grid-cols-4 md:grid-cols-5 gap-2">
+              <li class="flex flex-col items-center">
+                <img src="./assets/javascript.svg" alt="JavaScript icon" />
+                <span class="text-xs text-gray-500">JavaScript</span>
+              </li>
+              <li class="flex flex-col items-center">
+                <img src="./assets/typescript.svg" alt="TypeScript icon" />
+                <span class="text-xs text-gray-500">TypeScript</span>
+              </li>
+              <li class="flex flex-col items-center">
+                <img src="./assets/react.svg" alt="React icon" />
+                <span class="text-xs text-gray-500">React</span>
+              </li>
+              <li class="flex flex-col items-center">
+                <img src="./assets/node.svg" alt="Node icon" />
+                <span class="text-xs text-gray-500">Node.js</span>
+              </li>
+              <li class="flex flex-col items-center">
+                <img src="./assets/express.svg" alt="Express icon" />
+                <span class="text-xs text-gray-500">Express.js</span>
+              </li>
+              <li class="flex flex-col items-center">
+                <img src="./assets/tailwindcss.svg" alt="Tailwindcss icon" />
+                <span class="text-xs text-gray-500">Tailwindcss</span>
+              </li>
+              <li class="flex flex-col items-center">
+                <img src="./assets/git.svg" alt="Git icon" />
+                <span class="text-xs text-gray-500">Git</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="px-6 pb-6 flex justify-center">
+          <button
+            class="rounded-full bg-emerald-500 hover:shadow-lg font-semibold text-white px-4 py-3 flex items-center text-sm gap-1 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-emerald-500 duration-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            Let's Connect!
+          </button>
+        </div>
+      </section>
+
+      <!-- Start: Experience -->
+      <section
+        id="experience"
+        class="bg-white shadow-2xl max-w-xl rounded-lg mx-auto"
+      >
+        <div class="px-6 py-6 flex flex-col gap-2 border-t-2">
+          <h2 class="font-semibold text-xl text-black">Experience</h2>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            congue erat non urna tristique, vitae vehicula nisl feugiat.
+          </p>
+
+          <div class="my-4">
+            <ul class="flex flex-col gap-7">
+              <li>
+                <div class="relative">
+                  <span
+                    class="absolute top-10 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                    aria-hidden="true"
+                  ></span>
+                  <div class="flex items-start gap-3">
+                    <a
+                      href="https://www.optum.com/en/"
+                      rel="noreferrer"
+                      class="shrink-0"
+                    >
+                      <img
+                        src="./assets/optum_logo.jpg"
+                        alt="Optum logo"
+                        class="w-10 rounded-full"
+                      />
+                    </a>
+                    <div class="flex flex-col gap-2">
+                      <div class="flex flex-wrap items-start gap-2">
+                        <div class="flex flex-col grow shrink-0">
+                          <span class="font-medium text-black"
+                            >Software Engineer</span
+                          >
+                          <span class="whitespace-nowrap text-sm text-gray-600">
+                            Optum, Cebu
+                          </span>
+                        </div>
+                        <span
+                          class="bg-white rounded-full border border-gray-300 px-3 py-0.5 text-sm font-medium text-black"
+                        >
+                          2021 - Present
+                        </span>
+                      </div>
+                      <div class="text-sm">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Proin congue erat non urna tristique, vitae
+                          vehicula nisl feugiat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="relative">
+                  <span
+                    class="absolute top-10 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                    aria-hidden="true"
+                  ></span>
+                  <div class="flex items-start gap-3">
+                    <a
+                      href="https://www.inspirex.io/"
+                      rel="noreferrer"
+                      class="shrink-0"
+                    >
+                      <img
+                        src="./assets/inspire_team_logo.jpg"
+                        alt="InspireTeam logo"
+                        class="w-10 rounded-full scale-150"
+                      />
+                    </a>
+                    <div class="flex flex-col gap-2">
+                      <div class="flex flex-wrap items-start gap-2">
+                        <div class="flex flex-col grow shrink-0">
+                          <span class="font-medium text-black"
+                            >Senior Software Engineer</span
+                          >
+                          <span class="whitespace-nowrap text-sm text-gray-600">
+                            Inspire Team, Cebu
+                          </span>
+                        </div>
+                        <span
+                          class="bg-white rounded-full border border-gray-300 px-3 py-0.5 text-sm font-medium text-black"
+                        >
+                          2017 - 2021
+                        </span>
+                      </div>
+                      <div class="text-sm">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Proin congue erat non urna tristique, vitae
+                          vehicula nisl feugiat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- TODO: Elementz -->
+              <li>
+                <div class="relative">
+                  <span
+                    class="absolute top-10 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                    aria-hidden="true"
+                  ></span>
+                  <div class="relative flex items-start gap-3">
+                    <img
+                      src="./assets/optum_logo.jpg"
+                      alt="Optum logo"
+                      class="w-10 rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <div class="flex flex-wrap items-start gap-2">
+                        <div class="flex flex-col grow shrink-0">
+                          <span class="font-medium text-gray-900"
+                            >Software Engineer</span
+                          >
+                          <span class="whitespace-nowrap text-sm text-gray-600">
+                            Optum, Cebu
+                          </span>
+                        </div>
+                        <span
+                          class="bg-white rounded-full border border-gray-300 px-3 py-0.5 text-sm font-medium text-gray-900"
+                        >
+                          2021 - Present
+                        </span>
+                      </div>
+                      <div class="">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Proin congue erat non urna tristique, vitae
+                          vehicula nisl feugiat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- TODO: KYOCERA -->
+              <li>
+                <div class="relative">
+                  <span
+                    class="absolute top-10 left-5 -ml-px h-full w-0.5 bg-gray-200"
+                    aria-hidden="true"
+                  ></span>
+                  <div class="relative flex items-start gap-3">
+                    <img
+                      src="./assets/optum_logo.jpg"
+                      alt="Optum logo"
+                      class="w-10 rounded-full"
+                    />
+                    <div class="flex flex-col gap-2">
+                      <div class="flex flex-wrap items-start gap-2">
+                        <div class="flex flex-col grow shrink-0">
+                          <span class="font-medium text-gray-900"
+                            >Software Engineer</span
+                          >
+                          <span class="whitespace-nowrap text-sm text-gray-600">
+                            Optum, Cebu
+                          </span>
+                        </div>
+                        <span
+                          class="bg-white rounded-full border border-gray-300 px-3 py-0.5 text-sm font-medium text-gray-900"
+                        >
+                          2021 - Present
+                        </span>
+                      </div>
+                      <div class="">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Proin congue erat non urna tristique, vitae
+                          vehicula nisl feugiat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- TODO: NCR -->
+              <li>
+                <div class="relative flex items-start gap-3">
+                  <img
+                    src="./assets/optum_logo.jpg"
+                    alt="Optum logo"
+                    class="w-10 rounded-full"
+                  />
+                  <div class="flex flex-col gap-2">
+                    <div class="flex flex-wrap items-start gap-2">
+                      <div class="flex flex-col grow shrink-0">
+                        <span class="font-medium text-gray-900"
+                          >Software Engineer</span
+                        >
+                        <span class="whitespace-nowrap text-sm text-gray-600">
+                          Optum, Cebu
+                        </span>
+                      </div>
+                      <span
+                        class="bg-white rounded-full border border-gray-300 px-3 py-0.5 text-sm font-medium text-gray-900"
+                      >
+                        2021 - Present
+                      </span>
+                    </div>
+                    <div class="">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin congue erat non urna tristique, vitae vehicula
+                        nisl feugiat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- End: About -->
-    <!-- TODO: Start: Experience -->
     <!-- TODO: End: Experience -->
     <!-- TODO: Start: Projects -->
     <!-- TODO: End: Projects -->
