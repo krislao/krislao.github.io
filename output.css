@@ -710,6 +710,10 @@ video {
   flex-grow: 1;
 }
 
+.basis-full {
+  flex-basis: 100%;
+}
+
 .scale-150 {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
@@ -1059,6 +1063,10 @@ video {
 
   .xs\:h-48 {
     height: 12rem;
+  }
+
+  .xs\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .xs\:grid-cols-4 {
