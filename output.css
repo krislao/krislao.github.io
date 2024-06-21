@@ -912,6 +912,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1060,6 +1065,15 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xs\:p-4 {
+    padding: 1rem;
+  }
+
+  .xs\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .xs\:pb-1 {
     padding-bottom: 0.25rem;
   }
@@ -1070,6 +1084,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:p-4 {
+    padding: 1rem;
+  }
+
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
