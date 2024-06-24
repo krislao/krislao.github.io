@@ -1,5 +1,6 @@
 (function () {
-  var experienceList = document.querySelector("#experience ul");
+  var experience = document.querySelector("#experience");
+  var experienceList = experience.querySelector("ul");
   var lastShownItem = experienceList.querySelector("li:nth-of-type(2)");
   var firstHiddenItem = lastShownItem.nextElementSibling;
 
@@ -31,7 +32,7 @@
 
       setTimeout(function () {
         firstHiddenItem.scrollIntoView();
-      }, 700);
+      }, 400);
     } else {
       delete experienceList.dataset.expanded;
       experienceListStyle.height = `${collapsed}px`;
@@ -40,8 +41,8 @@
       showLessContentStyle.display = "none";
 
       setTimeout(function () {
-        experienceList.scrollIntoView();
-      }, 700);
+        experience.scrollIntoView();
+      }, 400);
     }
   });
 
