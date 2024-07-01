@@ -311,6 +311,7 @@
           <div class="my-4">
             <ul
               class="relative -m-2 flex flex-col gap-7 overflow-y-hidden p-2 transition-[height] duration-300 ease-linear"
+              id="collapse-target"
             >
               <li>
                 <div class="relative">
@@ -530,6 +531,10 @@
           </div>
           <button
             class="self-center rounded-full bg-emerald-500 px-4 py-3 text-sm font-semibold text-white transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-emerald-500 hover:shadow-lg"
+            data-toggle="collapse"
+            data-target="collapse-target"
+            aria-controls="collapse-target"
+            aria-expanded="false"
           >
             <span class="flex gap-1">
               <svg

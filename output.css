@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.collapse {
+  visibility: collapse;
+}
+
 .absolute {
   position: absolute;
 }
@@ -582,17 +586,12 @@ video {
   z-index: 50;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .-m-2 {
   margin: -0.5rem;
 }
 
-.-mx-1 {
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
+.m-auto {
+  margin: auto;
 }
 
 .mx-auto {
@@ -888,17 +887,12 @@ video {
      object-position: top;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-3 {
