@@ -9,6 +9,8 @@
   function initialize() {
     if (shouldRedirectToHome()) {
       this.window.location.hash = navLinkHashes[0];
+    } else {
+      updateNavLinks();
     }
   }
 
@@ -36,10 +38,6 @@
   }
 
   window.addEventListener("hashchange", function () {
-    if (shouldRedirectToHome()) {
-      this.window.location.hash = navLinkHashes[0];
-      return;
-    }
-    updateNavLinks();
+    initialize();
   });
 })();
