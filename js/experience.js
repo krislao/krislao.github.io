@@ -1,11 +1,12 @@
 (function () {
+  // TODO: refactor similar with navigation.js
   var experienceSection = document.querySelector("#experience");
   var showAllButton = document.querySelector("button[data-toggle='collapse']");
   var experienceList = document.querySelector(
     `#${showAllButton.dataset.target}`,
   );
 
-  var lastItem = experienceList.querySelector("li:last-of-type");
+  var lastItem = experienceList.querySelector("li:last-of-type"); // TODO: check lastElementChild
   var lastShownItem = experienceList.querySelector("li:nth-of-type(2)");
   var firstHiddenItem = lastShownItem.nextElementSibling;
 

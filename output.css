@@ -1095,6 +1095,22 @@ video {
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
 }
 
+.hover\:text-black\/90:hover {
+  color: rgb(0 0 0 / 0.9);
+}
+
+.hover\:text-black\/80:hover {
+  color: rgb(0 0 0 / 0.8);
+}
+
+.hover\:text-black\/70:hover {
+  color: rgb(0 0 0 / 0.7);
+}
+
+.hover\:text-black\/30:hover {
+  color: rgb(0 0 0 / 0.3);
+}
+
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
