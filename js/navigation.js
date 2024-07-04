@@ -21,18 +21,17 @@
   }
 
   function updateNavLinks() {
-    var activeItemClasses = ["border-b-2", "border-black"];
-    var inactiveAnchorClass = "text-black/60";
-    var activeAnchorClass = "text-black/90";
+    var inactiveAnchorClasses = ["text-black/60", "hover:text-black/80"];
+    var activeAnchorClasses = ["text-black/90", "active"];
 
-    navItems.forEach(function (item) {
-      var { firstElementChild: anchorEl } = item;
+    navItems.forEach(function (itemEl) {
+      var { firstElementChild: anchorEl } = itemEl;
       if (anchorEl.hash == window.location.hash) {
-        item.classList.add(...activeItemClasses);
-        anchorEl.classList.replace(inactiveAnchorClass, activeAnchorClass);
+        anchorEl.classList.remove(...inactiveAnchorClasses);
+        anchorEl.classList.add(...activeAnchorClasses);
       } else {
-        item.classList.remove(...activeItemClasses);
-        anchorEl.classList.replace(activeAnchorClass, inactiveAnchorClass);
+        anchorEl.classList.remove(...activeAnchorClasses);
+        anchorEl.classList.add(...inactiveAnchorClasses);
       }
     });
   }

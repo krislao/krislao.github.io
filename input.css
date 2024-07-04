@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav a::after {
+  transform: scaleX(0);
+}
+nav a.active::after {
+  transform: scaleX(1);
+}
